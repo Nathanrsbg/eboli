@@ -8,7 +8,7 @@ let xJogador2 = 0;
 function draw() {
  ativajogo();  
    desenhajogadores();
-  desenhaLinhaDeChegada();
+  desenhaLinhaDeChegada(); // DESENHA A LINHA DE CHEGADA
   verificaVencedor();
 
   
@@ -16,7 +16,7 @@ function draw() {
 }
   function ativajogo(){
   if (focused == true) {
-    background("green");
+    background("green"); //DEIXA O FUNDO VERDE QUANDO CLICADO
   } else  {
     background("blue")
   }
@@ -24,7 +24,7 @@ function draw() {
 
  function desenhajogadores(){
   textSize(40);
-  text("🚓🦯",xJogador1,100);
+  text("🚓🦯",xJogador1,100); //IDENTIFICA OS CORREDORES
   text("🚑🦽",xJogador2,300);
  }
   
